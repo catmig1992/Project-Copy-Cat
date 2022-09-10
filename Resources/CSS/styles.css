@@ -1,0 +1,104 @@
+* {
+  outline: 1px solid red;
+}
+
+/*********************************			
+* GENERAL			
+*********************************/
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+/*********************************			
+* TOP SECTION			
+*********************************/
+header .top-bar {
+  background-color: #ffd6ee;
+}
+
+header .top-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header .currency-dropdown,
+.search-button {
+  text-align: right;
+  color: #f94c43;
+}
+
+header .cart-button {
+  text-align: right;
+}
+
+h1,
+.brand-slogan {
+  text-align: center;
+  color: #f94c43;
+}
+
+h1 {
+  font-family: "Irish Grover";
+}
+
+.brand-slogan {
+  font-weight: 100;
+}
+
+header section {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  margin-top: -15px;
+}
+
+header .hero {
+  width: 100%;
+}
+
+/*********************************			
+* MAIN			
+*********************************/
+
+main .brand-image img {
+  width: 50%;
+}
+
+main .shop-puzzles h3,
+.shop-puzzles h4 {
+  text-align: center;
+}
+
+main .series-one-box-1,
+.series-one-box-2,
+.series-one-box-bundle {
+  width: 30vw;
+  height: 30vh;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main .small-icon-images {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+main .small-icon-images img {
+  width: 20vw;
+  height: 20vh;
+}
+
+/*********************************			
+* FOOTER			
+*********************************/
+
+footer {
+  background-color: #f94c43;
+}

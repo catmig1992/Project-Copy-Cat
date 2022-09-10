@@ -5,25 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Resources/CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
     <title>Puzzle Love - Recreated</title>
   </head>
   <body>
     <header>
-      <nav class="top-menu">
-        <ul>
-          <li class="menu-options">SHOP</li>
-          <li class="menu-options">ABOUT PUZZLELOVE</li>
-        </ul>
-      </nav>
-      <h1>PUZZLELOVE</h1>
-      <h2 class="brand-slogan">FOR LOVERS OF PUZZLES</h2>
-      <nav class="currency-dropdown">USD $</nav>
-      <nav>
-        <ul>
-          <li class="secondary-buttons">SEARCH</li>
-          <li class="secondary-buttons">CART</li>
-        </ul>
-      </nav>
+      <section class="top-bar">
+        <nav class="top-menu">
+          <ul>
+            <li class="menu-options">SHOP</li>
+            <li class="menu-options">ABOUT PUZZLELOVE</li>
+          </ul>
+        </nav>
+        <h1>PUZZLELOVE</h1>
+        <h2 class="brand-slogan">FOR LOVERS OF PUZZLES</h2>
+        <div class="secondary-buttons">
+          <nav class="currency-dropdown">USD $</nav>
+          <nav class="search-button">SEARCH</nav>
+          <nav class="cart-button">CART</nav>
+        </div>
+      </section>
       <img
         class="hero"
         src="./Resources/Images/hero.PNG"
@@ -53,13 +59,15 @@
       <div class="shop-puzzles">
         <h3>SHOP LAUNCH COLLECTION</h3>
         <h4>SERIES ONE</h4>
-        <img
-          class="series-one-box-1"
-          src="./Resources/Images/puzzle-box-image-3.PNG"
-          alt="puzzle box cover image of multi-colored geometric shapes"
-        />
-        <a href="">TESSELLATE - 1000 PIECE PUZZLE</a>
-        <p>$42.00 USD</p>
+        <div class="shop-puzzle-1">
+          <img
+            class="series-one-box-1"
+            src="./Resources/Images/puzzle-box-image-3.PNG"
+            alt="puzzle box cover image of multi-colored geometric shapes"
+          />
+          <a href="">TESSELLATE - 1000 PIECE PUZZLE</a>
+          <p>$42.00 USD</p>
+        </div>
         <img
           class="series-one-box-2"
           src="./Resources/Images/puzzle-box-image-4.PNG"
@@ -77,15 +85,36 @@
       </div>
       <button>VIEW ALL PRODUCTS</button>
       <p>Follow Us On Instagram</p>
-      <img src="./Resources/Images/puzzle-instagram-image1.PNG" alt="" />
-      <img src="./Resources/Images/puzzle-box-image-6.PNG" alt="" />
-      <img src="./Resources/Images/puzzle-video-image.PNG" alt="" />
-      <img src="./Resources/Images/puzzle-instagram-image2.PNG" alt="" />
+      <div class="small-icon-images">
+        <img
+          src="./Resources/Images/puzzle-instagram-image1.PNG"
+          alt="puzzle pieces spread across a table"
+        />
+        <img
+          src="./Resources/Images/puzzle-box-image-6.PNG"
+          alt="puzzle box cover of geometric shapes"
+        />
+        <img
+          src="./Resources/Images/puzzle-video-image.PNG"
+          alt="free shipping text image"
+        />
+        <img
+          src="./Resources/Images/puzzle-instagram-image2.PNG"
+          alt="puzzling is a verb text image"
+        />
+      </div>
     </main>
     <footer>
-      <img src="./Resources/Images/puzzle-logo.PNG" alt="">
-      <p>PUZZLELOVE was created for lovers of puzzles. We know the joy that comes from completing a beautiful puzzle. Designed with love, in Brooklyn, New York. Collect them all!</p>
-      <img src="./Resources/Images/instagram-logo.PNG" alt="">
+      <img
+        src="./Resources/Images/puzzle-logo.PNG"
+        alt="heart shape with the word puzzle in the center"
+      />
+      <p>
+        PUZZLELOVE was created for lovers of puzzles. We know the joy that comes
+        from completing a beautiful puzzle. Designed with love, in Brooklyn, New
+        York. Collect them all!
+      </p>
+      <img src="./Resources/Images/instagram-logo.PNG" alt="" />
       <nav class="currency-dropdown">USD $</nav>
       <a href="">© PUZZLELOVE</a>
       <p>SHOP</p>
@@ -98,9 +127,19 @@
       <a href="">Shipping & Returns</a>
       <a href="">Wholesale</a>
       <p>EMAILS FROM PUZZLERS</p>
-      <p>Sign up to The Jigazette! (Yes, we went there) for all the latest news. We only send emails we want to get ourselves - you won't be puzzled to hear from us!</p>
+      <p>
+        Sign up to The Jigazette! (Yes, we went there) for all the latest news.
+        We only send emails we want to get ourselves - you won't be puzzled to
+        hear from us!
+      </p>
       <form method="post" action="">
-        <input type="email" name="email" aria-label="Enter your email address" placeholder="Enter your email address" required>
+        <input
+          type="email"
+          name="email"
+          aria-label="Enter your email address"
+          placeholder="Enter your email address"
+          required
+        />
         <button type="submit">SUBSCRIBE</button>
       </form>
     </footer>
