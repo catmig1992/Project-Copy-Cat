@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./Resources/CSS/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,15 +22,21 @@
   <body>
     <header>
       <section class="top-bar">
+        <div class="left-nav">
         <nav class="top-menu">
           <ul>
             <li class="menu-options">SHOP</li>
             <li class="menu-options">ABOUT PUZZLELOVE</li>
           </ul>
         </nav>
-        <h1>PUZZLELOVE</h1>
-        <h2 class="brand-slogan">FOR LOVERS OF PUZZLES</h2>
-        <div class="secondary-buttons">
+        </div>
+        <div class="brand-logo">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0601/2855/9344/files/PUZZLELOVE-logo_350x.png?v=1638873554"
+            alt="puzzle love logo"
+          />
+        </div>
+        <div class="right-nav">
           <nav class="currency-dropdown">USD $</nav>
           <nav class="search-button">SEARCH</nav>
           <nav class="cart-button">CART</nav>
@@ -37,6 +49,7 @@
       />
     </header>
     <main>
+      <section class="puzzle-description">
       <div class="brand-image">
         <img
           src="./Resources/Images/puzzle-box-image-2.PNG"
@@ -44,8 +57,8 @@
         />
       </div>
       <div class="brand-blurb">
-        <h3>PUZZLELOVE</h3>
-        <h4>PUZZLING IS A VERB</h4>
+        <h1>PUZZLELOVE</h1>
+        <h2>PUZZLING IS A VERB</h2>
         <p>
           What kind of Puzzler are you? Maybe as a child you enjoyed emptying a
           jar of buttons onto the floor and sorting them into color order? Maybe
@@ -56,6 +69,7 @@
         <p>Whatever kind of puzzler you are, PUZZELOVE has a puzzle for you!</p>
         <a href="">LET'S PUZZLE</a>
       </div>
+      </section>
       <div class="shop-puzzles">
         <h3>SHOP LAUNCH COLLECTION</h3>
         <h4>SERIES ONE</h4>
@@ -68,6 +82,7 @@
           <a href="">TESSELLATE - 1000 PIECE PUZZLE</a>
           <p>$42.00 USD</p>
         </div>
+        <div class="shop-puzzle-2">
         <img
           class="series-one-box-2"
           src="./Resources/Images/puzzle-box-image-4.PNG"
@@ -75,6 +90,8 @@
         />
         <a href="">FLORESCENCE - 1000 PIECE PUZZLE</a>
         <p>$42.00 USD</p>
+        </div>
+        <div class="shop-puzzle-bundle">
         <img
           class="series-one-box-bundle"
           src="./Resources/Images/puzzle-box-image-5.PNG"
@@ -82,6 +99,7 @@
         />
         <a href="">POWER PUZZLERS VALUE BUNDLE *SAVE 10%*</a>
         <p>$75.00 USD</p>
+        </div>
       </div>
       <button>VIEW ALL PRODUCTS</button>
       <p>Follow Us On Instagram</p>

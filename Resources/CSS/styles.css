@@ -15,11 +15,20 @@ body {
 *********************************/
 header .top-bar {
   background-color: #ffd6ee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 header .top-menu ul {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+header .left-nav {
+  display: flex;
 }
 
 header .currency-dropdown,
@@ -32,18 +41,14 @@ header .cart-button {
   text-align: right;
 }
 
-h1,
-.brand-slogan {
-  text-align: center;
-  color: #f94c43;
+header .right-nav {
+  display: flex;
 }
 
-h1 {
-  font-family: "Irish Grover";
-}
-
-.brand-slogan {
-  font-weight: 100;
+.brand-image img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 header section {
