@@ -6,7 +6,7 @@
 * GENERAL			
 *********************************/
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
   margin: 0;
 }
 
@@ -28,17 +28,18 @@ header .top-menu ul {
 }
 
 header .left-nav {
+  width: 20%;
   display: flex;
 }
 
 header .currency-dropdown,
 .search-button {
-  text-align: right;
+  padding: 0;
   color: #f94c43;
 }
 
 header .cart-button {
-  text-align: right;
+  padding: 0;
 }
 
 header .right-nav {
@@ -67,7 +68,30 @@ header .hero {
 *********************************/
 
 main .brand-image img {
-  width: 50%;
+  width: 50vw;
+}
+
+main .brand-blurb {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+main .puzzle-description {
+  display: flex;
+  flex-direction: row;
+}
+
+main .brand-blurb h1 {
+  font-size: 0.8rem;
+}
+
+main .brand-blurb h2 {
+  font-size: 1.4rem;
+}
+
+main .brand-blurb p {
+  font-size: 1rem;
 }
 
 main .shop-puzzles h3,
@@ -75,15 +99,46 @@ main .shop-puzzles h3,
   text-align: center;
 }
 
+main .shop-puzzles h3 {
+  font-size: small;
+  padding: 1rem;
+}
+
+main .shop-puzzles h4 {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+/* main .shop-puzzle-series {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+} */
+
 main .series-one-box-1,
-.series-one-box-2,
-.series-one-box-bundle {
-  width: 30vw;
-  height: 30vh;
+.series-one-box-2 {
+  width: 40%;
+  height: 40%;
+}
+
+main .series-one-box-bundle {
+  width: 40%;
+  height: 40%;
+}
+
+main .shop-puzzle-1,
+.shop-puzzle-2,
+.shop-puzzle-bundle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main a {
   text-decoration: none;
+  color: black;
 }
 
 main .small-icon-images {
@@ -95,15 +150,87 @@ main .small-icon-images {
   justify-content: space-evenly;
 }
 
-main .small-icon-images img {
-  width: 20vw;
-  height: 20vh;
+main hr {
+  border: 1px solid rgb(173, 173, 173);
 }
 
+main .view-product-button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+main button {
+  background-color: #d8fe3c;
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  border-color: #d8fe3c;
+}
+
+main .instagram-cta {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+main .small-icon-images .icon-a {
+  width: 20%;
+  height: 20%;
+}
+
+main .small-icon-images {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 /*********************************			
 * FOOTER			
 *********************************/
 
 footer {
   background-color: #f94c43;
+}
+
+footer .brand-marketing-blurb p {
+  color: white;
+  padding: 2rem;
+  min-width: 20%;
+  min-height: 40%;
+}
+
+footer .instagram-logo {
+  padding: 2rem;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer button {
+  background-color: #d8fe3c;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  border-color: #d8fe3c;
+}
+
+/*********************************			
+* MEDIA QUERY			
+*********************************/
+
+@media (min-width: 600px) {
+  main .brand-image img {
+    padding: 5rem 1rem;
+    display: flex;
+    align-self: center;
+  }
+
+  main .brand-blurb {
+    padding: 2rem;
+  }
 }
