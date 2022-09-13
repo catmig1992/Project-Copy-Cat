@@ -115,6 +115,7 @@ main .brand-blurb h2 {
 
 main .brand-blurb p {
   font-size: 1rem;
+  padding-right: 2rem;
 }
 
 main .shop-puzzles h3,
@@ -242,6 +243,7 @@ footer select {
 footer a {
   text-decoration: none;
   color: white;
+  padding-bottom: 1rem;
 }
 
 footer form input {
@@ -254,7 +256,7 @@ footer form input {
 footer button {
   background-color: #d8fe3c;
   padding: 0.5rem 1.5rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
   font-size: 0.9rem;
   border: 1px solid #d8fe3c;
   display: flex;
@@ -262,13 +264,14 @@ footer button {
 }
 
 footer .marketing-column {
-  padding-bottom: 10rem;
+  padding: 0 0 8rem 3rem;
   width: 60%;
   height: 20%;
 }
 
 footer .shop-column {
   margin-top: 2rem;
+  padding-left: 6rem;
   width: 30%;
   height: 20%;
 }
@@ -277,7 +280,7 @@ footer .puzzler-column {
   margin-top: 2rem;
   width: 30%;
   height: 20%;
-  padding-bottom: 1rem;
+  padding-left: 6rem;
   display: flex;
   flex-direction: column;
 }
@@ -286,8 +289,7 @@ footer .email-column {
   margin-top: 2rem;
   width: 30%;
   height: 20%;
-  padding-right: 4rem;
-  padding-bottom: 1rem;
+  padding: 0 6rem;
   display: flex;
   flex-direction: column;
 }
@@ -305,7 +307,7 @@ footer .currency-dropdown,
 }
 
 footer .bottom-row {
-  padding: 0 0 1rem 3rem;
+  padding: 0 0 1rem 5rem;
 }
 
 /*********************************			
@@ -325,6 +327,6 @@ footer .bottom-row {
 
   /* footer .footer-info {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   } */
 }
