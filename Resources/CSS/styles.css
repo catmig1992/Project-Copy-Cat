@@ -98,6 +98,7 @@ main .brand-blurb {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
+  flex: 1 1 100%;
 }
 
 main .puzzle-description {
@@ -118,6 +119,11 @@ main .brand-blurb p {
   padding-right: 2rem;
 }
 
+main .shop-puzzle-series a,
+.shop-puzzle-series p {
+  padding: 1rem 0;
+}
+
 main .shop-puzzles h3,
 .shop-puzzles h4 {
   text-align: center;
@@ -135,13 +141,13 @@ main .shop-puzzles h4 {
 
 main .series-one-box-1,
 .series-one-box-2 {
-  width: 40%;
-  height: 40%;
+  width: 80%;
+  height: 80%;
 }
 
 main .series-one-box-bundle {
-  width: 40%;
-  height: 40%;
+  width: 80%;
+  height: 80%;
 }
 
 main .shop-puzzle-1,
@@ -158,6 +164,7 @@ main .shop-puzzle-series {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex: 1 1 100%;
 }
 
 main a {
