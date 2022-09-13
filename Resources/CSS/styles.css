@@ -17,43 +17,54 @@ header .top-bar {
   background-color: #ffd6ee;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 header .top-menu ul {
   list-style: none;
   padding-left: 0;
+  font-size: 0.8rem;
   display: flex;
   flex-direction: row;
 }
 
+header .menu-options {
+  padding-right: 2rem;
+}
+
 header .left-nav {
-  width: 20%;
+  padding: 1.5rem;
+  display: flex;
+}
+
+header .brand-logo img {
+  width: 100%;
+  height: 80%;
+  padding-top: 1.5rem;
+}
+
+header .brand-logo {
   display: flex;
 }
 
 header .currency-dropdown,
 .search-button {
-  padding: 0;
+  padding: 1.5rem 1rem 1rem 0.5rem;
   color: #f94c43;
+  font-size: 0.8rem;
 }
 
 header .cart-button {
-  padding: 0;
+  padding: 1.5rem 1rem 1rem 0.5rem;
+  font-size: 0.8rem;
 }
 
 header .right-nav {
   display: flex;
 }
 
-.brand-image img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 header section {
-  width: 100vw;
+  width: 100%;
   position: sticky;
   top: 0;
   margin-top: -15px;
@@ -69,6 +80,9 @@ header .hero {
 
 main .brand-image img {
   width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 main .brand-blurb {
@@ -109,14 +123,6 @@ main .shop-puzzles h4 {
   padding: 1rem;
 }
 
-/* main .shop-puzzle-series {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1 1 100%;
-} */
-
 main .series-one-box-1,
 .series-one-box-2 {
   width: 40%;
@@ -131,9 +137,17 @@ main .series-one-box-bundle {
 main .shop-puzzle-1,
 .shop-puzzle-2,
 .shop-puzzle-bundle {
+  width: 50%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main .shop-puzzle-series {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 main a {
@@ -192,18 +206,21 @@ footer {
   background-color: #f94c43;
 }
 
+footer .heart-logo {
+  padding-left: 1.5rem;
+}
+
 footer .brand-marketing-blurb p {
   color: white;
-  padding: 2rem;
-  min-width: 20%;
-  min-height: 40%;
+  padding: 1rem 15rem 1rem 3rem;
 }
 
 footer .instagram-logo {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
-footer p {
+footer p,
+.currency-dropdown {
   color: white;
 }
 
@@ -212,11 +229,63 @@ footer a {
   color: white;
 }
 
+footer form input {
+  background-color: #f94c43;
+  border-color: white;
+  color: white;
+}
+
 footer button {
   background-color: #d8fe3c;
   padding: 0.5rem 1.5rem;
   font-size: 0.9rem;
   border-color: #d8fe3c;
+  display: flex;
+  align-self: center;
+}
+
+footer .marketing-column {
+  padding-bottom: 10rem;
+  width: 60%;
+  height: 20%;
+}
+
+footer .shop-column {
+  width: 30%;
+  height: 20%;
+}
+
+footer .puzzler-column {
+  width: 30%;
+  height: 20%;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .email-column {
+  width: 30%;
+  height: 20%;
+  padding-right: 4rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer .currency-dropdown,
+.copyright-puzzlelove {
+  font-size: 0.7rem;
+  padding-bottom: 1.5rem;
+}
+
+footer .usd-row {
+  padding: 2rem 3rem;
 }
 
 /*********************************			
@@ -233,4 +302,9 @@ footer button {
   main .brand-blurb {
     padding: 2rem;
   }
+
+  /* footer .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+  } */
 }
